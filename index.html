@@ -842,10 +842,20 @@ async function saveRecord(coll, prefix, body) {
   }
   return null;
 }
+/* Orders go straight to the database when it's connected; otherwise they're sent on WhatsApp. */
+let DB_ON = false;
+function orderButton() {
+  const b = $('#cart-foot button[type=submit]');
+  if (!b || b.disabled) return;
+  b.textContent = DB_ON ? 'Place order' : 'Send order on WhatsApp';
+  b.classList.toggle('btn-primary', DB_ON);
+  b.classList.toggle('btn-wa', !DB_ON);
+}
 CLOUD.then(c => {
   if (!c) return;
   if (c.owner) $$('.owner-only').forEach(el => { el.hidden = false; });
   if (c.db) {
+    DB_ON = true; orderButton();
     try {
       c.db.doc('shared/stock').onSnapshot(s => {
         STOCK = (s.exists && s.data() && s.data().items) || {};
@@ -889,7 +899,7 @@ $('#order-form').addEventListener('submit', async e => {
     supplier: { ref: '', tracking: '' }, note: '', stockDeducted: false
   };
   const savedNo = await saveRecord('orders', 'OD', order);
-  placing = false; done();
+  placing = false; done(); orderButton();
   const no = savedNo || ref('OD');
   const lines = [
     `Overdriveauto order ${no}`, '',
