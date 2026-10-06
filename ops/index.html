@@ -9,18 +9,20 @@
 <link rel="icon" href="../favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Big+Shoulders+Display:wght@800&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 <style>
 /* ===== Operations site: sidebar console on desktop, bottom tabs on phones ===== */
 .o-app{min-height:100vh;display:grid;grid-template-columns:236px minmax(0,1fr);background:var(--bg)}
 .o-side{position:sticky;top:0;height:100vh;overflow:auto;background:var(--surface);border-right:1px solid var(--line);display:flex;flex-direction:column;gap:8px;padding:16px 12px}
-.o-brand{display:flex;align-items:center;gap:8px;padding:4px 8px 14px;text-decoration:none;color:var(--ink);font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:20px;line-height:1;letter-spacing:.015em;white-space:nowrap;min-width:0}
+.o-brand{display:flex;align-items:center;gap:8px;padding:4px 8px 14px;text-decoration:none;color:var(--ink);font-family:var(--f-display);font-stretch:112%;font-weight:800;font-size:16px;line-height:1;letter-spacing:-.02em;white-space:nowrap;min-width:0}
 .o-brand > span{min-width:0;overflow:hidden}
 .o-brand em{flex:none}
-.o-brand svg{width:30px;height:30px;flex:none}
-.o-brand i{font-style:normal;color:var(--brand)}
-.o-brand em{font-style:normal;font-family:var(--f-mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;background:var(--tag);color:var(--on-tag);padding:3px 6px;border-radius:4px}
+.o-brand svg{width:40px;height:26px;flex:none}
+.o-side .o-brand{font-size:15.5px;font-stretch:100%;gap:7px}
+.o-side .o-brand svg{width:34px;height:22px}
+.o-brand i{font-style:normal;font-weight:400}
+.o-brand em{font-style:normal;font-family:var(--f-body);font-stretch:100%;font-size:12px;font-weight:800;letter-spacing:0;background:var(--tag);color:var(--on-tag);padding:3px 6px;border-radius:3px}
 .o-nav{display:grid;gap:2px}
 .o-navlink{display:flex;align-items:center;gap:10px;width:100%;padding:9px 10px;border:0;border-radius:8px;background:none;color:var(--ink);font-weight:600;font-size:15px;text-align:left;text-decoration:none;cursor:pointer}
 .o-navlink:hover{background:var(--surface-2)}
@@ -45,7 +47,7 @@
   .o-side{display:none}
   .o-top{display:flex;position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line);padding:10px 16px;align-items:center;justify-content:space-between;gap:10px}
   .o-top .o-brand{padding:0;font-size:clamp(18px,5.6vw,21px);min-width:0;overflow:hidden}
-  .o-top .o-brand svg{width:26px;height:26px}
+  .o-top .o-brand svg{width:36px;height:24px}
   .o-back{flex:none}
   .o-main{padding:16px 16px calc(92px + env(safe-area-inset-bottom,0px))}
   .o-tabs{display:grid;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--surface);border-top:1px solid var(--line);grid-template-columns:repeat(5,minmax(0,1fr));padding:6px 4px calc(6px + env(safe-area-inset-bottom,0px))}
@@ -59,7 +61,7 @@
 
 /* Page heads and panels */
 .o-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px 16px;flex-wrap:wrap}
-.o-head h1{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,3.6vw,2.6rem);line-height:1;margin:0;letter-spacing:.01em}
+.o-head h1{font-family:var(--f-display);font-stretch:125%;font-weight:800;font-size:clamp(1.7rem,3vw,2.2rem);line-height:1.05;margin:0;letter-spacing:-.025em}
 .o-head p{margin:6px 0 0;color:var(--muted);max-width:60ch}
 .o-stack{display:grid;gap:16px;min-width:0}
 .o-panel{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px;display:grid;gap:12px;align-content:start;min-width:0}
@@ -72,8 +74,8 @@
 .o-pill.warn{background:var(--tag);color:var(--on-tag)}
 .o-pill.bad{background:var(--danger-soft);color:var(--danger)}
 .o-pill.info{background:var(--brand-soft);color:var(--ink)}
-.o-ex{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;border:1px dashed var(--muted);padding:0 5px;border-radius:4px;color:var(--muted);white-space:nowrap}
-.o-mono{font-family:var(--f-mono);font-weight:600;font-size:13px}
+.o-ex{font-size:11.5px;font-weight:600;border:1px dashed var(--muted);padding:0 5px;border-radius:4px;color:var(--muted);white-space:nowrap}
+.o-mono{font-family:var(--f-body);font-variant-numeric:tabular-nums;font-weight:600;font-size:13px}
 .o-empty{border:1.5px dashed var(--line);border-radius:var(--r);padding:26px;background:var(--surface);display:grid;gap:10px;justify-items:start}
 .o-empty h3{margin:0;font-size:19px}
 .o-empty p{margin:0;color:var(--muted);max-width:56ch}
@@ -126,7 +128,7 @@
 /* Tables */
 .o-tablewrap{overflow-x:auto;margin:0 -4px;padding:0 4px}
 .o-table{width:100%;border-collapse:collapse;font-size:14px}
-.o-table th{text-align:left;font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600;padding:8px;border-bottom:1px solid var(--line);white-space:nowrap}
+.o-table th{text-align:left;font-size:13px;color:var(--muted);font-weight:600;padding:8px;border-bottom:1px solid var(--line);white-space:nowrap}
 .o-table td{padding:10px 8px;border-bottom:1px solid var(--line);vertical-align:top}
 .o-table tr:last-child td{border-bottom:0}
 .o-table .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -134,7 +136,7 @@
 .o-table tbody tr[data-order]:hover td{background:var(--surface-2)}
 .o-table tfoot td{font-weight:700;border-top:1px solid var(--line);border-bottom:0}
 .o-sub{display:block;font-size:12.5px;color:var(--muted);font-weight:400}
-.o-link{border:0;background:none;padding:0;font:inherit;color:var(--ink);font-family:var(--f-mono);font-weight:600;font-size:13px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.o-link{border:0;background:none;padding:0;font:inherit;color:var(--ink);font-family:var(--f-body);font-variant-numeric:tabular-nums;font-weight:600;font-size:13px;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
 
 /* Orders */
 .o-tools{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
@@ -144,14 +146,14 @@
 .o-tools select{width:auto;flex:0 0 auto}
 .o-board{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(252px,1fr);gap:12px;overflow-x:auto;padding-bottom:8px;align-items:start}
 .o-colm{background:var(--surface-2);border-radius:var(--r);padding:10px;display:grid;gap:8px;align-content:start;min-height:120px}
-.o-colm h3{margin:2px 4px 2px;font-size:12px;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
+.o-colm h3{margin:2px 4px 2px;font-size:13.5px;color:var(--muted);display:flex;justify-content:space-between;gap:8px}
 .o-colm .none{font-size:13px;color:var(--muted);padding:6px 4px}
 .o-cards{display:grid;gap:10px}
 .o-card{display:grid;gap:5px;width:100%;padding:12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;text-align:left;cursor:pointer;min-width:0}
 .o-card:hover{border-color:var(--brand)}
 .o-card .top{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--muted)}
 .o-card .top .ago{margin-left:auto;white-space:nowrap}
-.o-card .no{font-family:var(--f-mono);font-weight:600;color:var(--ink);font-size:13px}
+.o-card .no{font-family:var(--f-body);font-variant-numeric:tabular-nums;font-weight:600;color:var(--ink);font-size:13px}
 .o-card .who{font-weight:600;font-size:15px;overflow-wrap:anywhere}
 .o-card .meta{font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;gap:4px 10px}
 .o-card .amt{display:flex;justify-content:space-between;align-items:center;gap:8px;font-variant-numeric:tabular-nums;flex-wrap:wrap}
@@ -165,7 +167,7 @@
 .o-drawer{position:fixed;top:0;right:0;bottom:0;width:min(640px,100%);background:var(--bg);z-index:50;display:flex;flex-direction:column;box-shadow:var(--shadow);padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);animation:slide .22s ease-out}
 @media (prefers-reduced-motion:reduce){.o-drawer{animation:none}}
 .o-dr-head{display:flex;align-items:center;gap:10px;padding:14px 18px;background:var(--surface);border-bottom:1px solid var(--line)}
-.o-dr-head h2{font-family:var(--f-mono);font-size:18px;font-weight:600;text-transform:none;letter-spacing:0;margin:0}
+.o-dr-head h2{font-family:var(--f-body);font-variant-numeric:tabular-nums;font-size:18px;font-weight:600;text-transform:none;letter-spacing:0;margin:0}
 .o-dr-head .x{margin-left:auto}
 .o-dr-body{flex:1;min-height:0;overflow:auto;padding:16px 18px 32px;display:grid;gap:14px;align-content:start}
 .o-statusline{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
@@ -219,7 +221,7 @@
 .o-stock{display:grid;gap:0}
 .o-srow{display:grid;grid-template-columns:minmax(0,1.6fr) 150px 92px minmax(0,1fr) auto;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}
 .o-srow:last-child{border-bottom:0}
-.o-srow.head{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em;font-weight:600;padding:4px 0 8px}
+.o-srow.head{font-size:13px;color:var(--muted);font-weight:600;padding:4px 0 8px}
 .o-srow .nm{font-weight:600;overflow-wrap:anywhere}
 .o-srow .input{height:38px;text-align:center;padding:0 6px}
 .o-step{display:flex;align-items:center;gap:4px}
@@ -241,7 +243,7 @@
 .o-morelist li + li{border-top:1px solid var(--line)}
 .o-morelist .o-navlink{padding:16px;font-size:16px;border-radius:0}
 .o-gate{display:grid;gap:14px;justify-items:start;max-width:560px;margin:8vh auto 0;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:28px}
-.o-gate h1{font-family:var(--f-display);font-weight:800;text-transform:uppercase;font-size:clamp(2rem,6vw,2.6rem);line-height:1;margin:0}
+.o-gate h1{font-family:var(--f-display);font-stretch:125%;font-weight:800;font-size:clamp(1.7rem,5vw,2.2rem);line-height:1.05;margin:0;letter-spacing:-.025em}
 .o-gate p{margin:0;color:var(--muted)}
 </style>
 </head>
@@ -249,7 +251,7 @@
 <div id="ops" class="o-app o-gated">
   <aside class="o-side" aria-label="Operations">
     <a class="o-brand" href="./" data-oview="overview" aria-label="Overdriveauto operations, overview">
-      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2.5l13.4 7.75v15.5L18 33.5 4.6 25.75v-15.5z" style="fill:var(--brand)"/><path d="M12 12.5l5.5 5.5-5.5 5.5M18.5 12.5l5.5 5.5-5.5 5.5" style="fill:none;stroke:var(--tag);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"/></svg>
+      <svg class="mark" viewBox="0 0 46 30" aria-hidden="true"><rect x="1" y="1" width="44" height="28" rx="8"/><text x="23" y="20" text-anchor="middle">O/D</text></svg>
       <span>Overdrive<i>auto</i></span><em>Ops</em>
     </a>
     <nav class="o-nav" id="o-nav" aria-label="Operations sections"></nav>
@@ -261,7 +263,7 @@
   <div class="o-wrap">
     <header class="o-top">
       <a class="o-brand" href="./" data-oview="overview" aria-label="Overdriveauto operations, overview">
-        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2.5l13.4 7.75v15.5L18 33.5 4.6 25.75v-15.5z" style="fill:var(--brand)"/><path d="M12 12.5l5.5 5.5-5.5 5.5M18.5 12.5l5.5 5.5-5.5 5.5" style="fill:none;stroke:var(--tag);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"/></svg>
+        <svg class="mark" viewBox="0 0 46 30" aria-hidden="true"><rect x="1" y="1" width="44" height="28" rx="8"/><text x="23" y="20" text-anchor="middle">O/D</text></svg>
         <span>Overdrive<i>auto</i></span><em>Ops</em>
       </a>
       <a class="o-back" href="../"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 6l-6 6 6 6M4 12h16"/></svg>Store</a>
@@ -811,7 +813,7 @@ FILL.stock = () => {
         <span>${pill(stockState(p.id))}</span>
       </div>`; }).join('')}
     </div></section>
-    <p class="hint">Only parts listed as "In stock · Dar" are tracked here. Changes save automatically and update the store within seconds.</p>`;
+    <p class="hint">Only parts listed as "In stock in Dar" are tracked here. Changes save automatically and update the store within seconds.</p>`;
 };
 
 FILL.sellers = () => {

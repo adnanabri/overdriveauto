@@ -4,42 +4,42 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Overdriveauto</title>
-<meta name="description" content="Car, truck and performance parts in Tanzania. Stock in Dar es Salaam, established Kariakoo shops, and parts ordered for you from Japan, Canada, the US and China. Order on WhatsApp, pay by mobile money.">
-<meta property="og:title" content="Overdriveauto: car, truck and performance parts in Tanzania">
-<meta property="og:description" content="Find the right part for your vehicle. Fitment checked before you pay. Order on WhatsApp.">
+<meta name="description" content="Car, truck and performance parts for Tanzania. In stock in Dar es Salaam, from Kariakoo shops, or ordered for you from Japan, Canada, the US and China. We check the part fits before you pay.">
+<meta property="og:title" content="Overdriveauto: car and truck parts in Tanzania">
+<meta property="og:description" content="Tell us what you drive and we'll find the part. Checked against your chassis number before you pay.">
 <meta property="og:type" content="website">
-<meta name="theme-color" content="#0E5A4A">
+<meta name="theme-color" content="#1E44A6">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Big+Shoulders+Display:wght@800&family=JetBrains+Mono:wght@500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap">
 <link rel="stylesheet" href="assets/site.css">
 </head>
 <body>
 <div id="store-app">
-<div class="demo-bar"><div class="wrap"><span class="demo-pill">Preview</span><span>Prices, part numbers and fitment shown are examples until launch.</span></div></div>
+<div class="demo-bar"><div class="wrap"><b>Preview:</b> prices, part numbers and fitment on this site are examples until we launch.</div></div>
 
 <header class="hdr">
   <div class="wrap">
     <a class="logo" href="#top" id="logo" aria-label="Overdriveauto, back to top">
-      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2.5l13.4 7.75v15.5L18 33.5 4.6 25.75v-15.5z" style="fill:var(--brand)"/><path d="M12 12.5l5.5 5.5-5.5 5.5M18.5 12.5l5.5 5.5-5.5 5.5" style="fill:none;stroke:var(--tag);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"/></svg>
-      <span><span class="logo-name"><b>Overdrive</b><span>auto</span></span><span class="logo-sub">Car, truck and performance parts · Tanzania</span></span>
+      <svg class="mark" viewBox="0 0 46 30" aria-hidden="true"><rect x="1" y="1" width="44" height="28" rx="8"/><text x="23" y="20" text-anchor="middle">O/D</text></svg>
+      <span><span class="logo-name">Overdrive<span>auto</span></span><span class="logo-sub">Car and truck parts for Tanzania</span></span>
     </a>
     <nav class="nav" aria-label="Main">
       <a href="#parts">Parts</a>
-      <a href="#how">How it works</a>
+      <a href="#how">Delivery</a>
       <a href="#request">Request a part</a>
-      <a href="#partners">Trade &amp; sellers</a>
+      <a href="#partners">Trade</a>
       <a href="#contact">Contact</a>
     </nav>
     <div class="search" role="search">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
       <label for="q" class="vh">Search parts</label>
-      <input id="q" type="search" placeholder="Search by part, brand or part number" autocomplete="off">
+      <input id="q" type="search" placeholder="Search parts, brands or part numbers" autocomplete="off">
     </div>
     <button type="button" class="cart-btn" id="open-cart" aria-label="Open your order">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2.2l2.1 10.5a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.3"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg>
-      <span class="cart-label">Order</span><span class="count" id="cart-count">0</span>
+      <span class="cart-label">Your order</span><span class="count" id="cart-count">0</span>
     </button>
     <button type="button" class="menu-btn" id="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
       <svg class="i-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -49,9 +49,9 @@
   <nav class="menu" id="menu" aria-label="Menu" hidden>
     <div class="wrap">
       <a class="m-link" href="#parts">Parts<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
-      <a class="m-link" href="#how">How it works<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+      <a class="m-link" href="#how">Delivery and returns<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
       <a class="m-link" href="#request">Request a part<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
-      <a class="m-link" href="#partners">Trade &amp; sellers<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
+      <a class="m-link" href="#partners">Garages and sellers<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
       <a class="m-link" href="#contact">Contact<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></a>
       <div class="m-contact">
         <div class="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1"/></svg><a href="tel:+17783250746">+1 778 325 0746</a><button type="button" class="copy-mini" data-copy-text="+1 778 325 0746">Copy</button></div>
@@ -66,116 +66,100 @@
   <section class="hero" id="finder">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Dar stock · Kariakoo shops · Japan, Canada, China</p>
-        <h1>Find the <em>right part</em> for your vehicle</h1>
-        <p class="lede">Parts in stock in Dar and from established Kariakoo shops, plus genuine parts ordered for you from Japan, Canada and the US, and accessories from China. Order on WhatsApp and pay by mobile money.</p>
-        <ul class="trust">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Fitment checked before you pay</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Delivery across Tanzania</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Trade prices for garages and fleets</li>
-        </ul>
+        <h1>What are you driving?</h1>
+        <form id="panel-veh" class="ask" novalidate>
+          <span class="ask-lead">I drive a</span>
+          <label class="pick"><span class="vh">Make</span><select id="v-make"></select><span class="pick-m" aria-hidden="true"></span></label>
+          <label class="pick"><span class="vh">Model</span><select id="v-model"></select><span class="pick-m" aria-hidden="true"></span></label>
+          <label class="pick"><span class="vh">Year</span><select id="v-year"></select><span class="pick-m" aria-hidden="true"></span></label>
+          <button type="submit" class="btn btn-primary">Show parts that fit</button>
+        </form>
+        <form id="panel-pn" class="pn" novalidate>
+          <label class="pn-label" for="pn">Or search by part number</label>
+          <div class="pn-row">
+            <input class="input" id="pn" placeholder="e.g. 90915-YZZD4" autocomplete="off" aria-describedby="pn-hint pn-err">
+            <button type="submit" class="btn btn-primary">Find part</button>
+          </div>
+          <p class="err" id="pn-err" hidden></p>
+          <p class="hint" id="pn-hint">It's printed on the old part or its box. Dashes and spaces don't matter.</p>
+        </form>
+        <p class="lede">Parts from our shelf in Dar es Salaam, from Kariakoo shops we work with, or ordered for you from Japan, Canada and China. We check every part against your chassis number before you pay.</p>
       </div>
 
-      <div class="finder">
-        <div class="finder-tag"><span>Vehicle finder</span><span>Fitment checked</span></div>
-        <div class="finder-body">
-          <div class="tabs" role="tablist" aria-label="Search method">
-            <button type="button" class="tab" role="tab" id="tab-veh" aria-selected="true" aria-controls="panel-veh">By vehicle</button>
-            <button type="button" class="tab" role="tab" id="tab-pn" aria-selected="false" aria-controls="panel-pn">By part number</button>
-          </div>
-          <form id="panel-veh" role="tabpanel" aria-labelledby="tab-veh" style="display:grid;gap:12px" novalidate>
-            <div class="fields">
-              <label class="f f-make">Make<select id="v-make"></select></label>
-              <label class="f">Model<select id="v-model"></select></label>
-              <label class="f">Year<select id="v-year"></select></label>
-            </div>
-            <button type="submit" class="btn btn-primary btn-block">Show parts for this vehicle</button>
-          </form>
-          <form id="panel-pn" role="tabpanel" aria-labelledby="tab-pn" hidden style="display:grid;gap:8px" novalidate>
-            <label class="f" for="pn">OEM or brand part number</label>
-            <div class="pn-row">
-              <input class="input" id="pn" placeholder="e.g. 90915-YZZD4 or LF9009" autocomplete="off">
-              <button type="submit" class="btn btn-primary">Search</button>
-            </div>
-            <p class="err" id="pn-err" hidden></p>
-            <p class="hint">Dashes and spaces don't matter.</p>
-          </form>
-        </div>
-        <div class="finder-foot"><span>Can't find it?</span><button type="button" class="link-btn" data-request>Request any part</button></div>
-      </div>
+      <aside class="howto" aria-labelledby="howto-title">
+        <h2 id="howto-title">How ordering works</h2>
+        <ol>
+          <li><span><b>Add parts to your order</b>Or send a request for one we don't list.</span></li>
+          <li><span><b>We confirm on WhatsApp</b>That it's in stock, that it fits, and the final price. Usually within a few hours.</span></li>
+          <li><span><b>Pay and get it delivered</b>M-Pesa, Airtel Money or bank. Dar stock goes out the same day.</span></li>
+        </ol>
+        <p class="howto-contact">Questions first? <a href="https://wa.me/17783250746" target="_blank" rel="noopener">WhatsApp +1 778 325 0746</a><br>Mon–Sat, 8:00–20:00</p>
+      </aside>
     </div>
   </section>
 
   <section class="section" id="parts">
     <div class="wrap">
-      <div class="section-head">
-        <div>
-          <h2>Parts</h2>
-          <div class="vbar" id="vbar" style="margin-top:10px"></div>
-        </div>
+      <div class="cat-head">
+        <h2>Parts</h2>
+        <div class="vbar" id="vbar"></div>
         <span class="result-count" id="result-count" aria-live="polite"></span>
       </div>
 
-      <div class="toolbar">
-        <div class="row"><div class="seg" id="lines" role="group" aria-label="Product line"></div></div>
-        <div class="row" id="cats" role="group" aria-label="Category"></div>
-        <div class="row-split">
-          <div class="row" id="srcs" role="group" aria-label="Where it comes from"></div>
-          <label class="switch" for="trade"><input type="checkbox" id="trade" role="switch">Trade prices</label>
+      <div class="cat-body">
+        <div class="filters">
+          <div class="fgroup">
+            <h3 class="flabel" id="fl-line">Range</h3>
+            <div class="fopts" id="lines" role="group" aria-labelledby="fl-line"></div>
+          </div>
+          <div class="fgroup">
+            <h3 class="flabel" id="fl-cat">Category</h3>
+            <div class="fopts" id="cats" role="group" aria-labelledby="fl-cat"></div>
+          </div>
+          <div class="fgroup">
+            <h3 class="flabel" id="fl-src">Comes from</h3>
+            <div class="fopts" id="srcs" role="group" aria-labelledby="fl-src"></div>
+          </div>
+          <div class="ftrade">
+            <label class="switch" for="trade"><input type="checkbox" id="trade" role="switch">Trade prices</label>
+            <p class="hint">10% off for garages and fleets.</p>
+          </div>
         </div>
-        <div class="trade-note" id="trade-note" hidden>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12l-8 8-8-8V4h8z"/><circle cx="8.5" cy="8.5" r="1.3"/></svg>
-          <span>Showing trade prices for garages and fleets: 10% off every part.</span>
+
+        <div class="list-wrap">
+          <div class="trade-note" id="trade-note" hidden>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12l-8 8-8-8V4h8z"/><circle cx="8.5" cy="8.5" r="1.3"/></svg>
+            <span>Showing trade prices: 10% off every part.</span>
+          </div>
+          <div class="list">
+            <div class="list-head" aria-hidden="true"><span>Part</span><span>Part number</span><span>Availability</span><span>Price</span><span></span></div>
+            <div id="grid"></div>
+          </div>
         </div>
       </div>
-
-      <div class="grid" id="grid"></div>
     </div>
   </section>
 
   <section class="section" id="how">
     <div class="wrap">
-      <div class="section-head">
-        <div>
-          <h2>Where your part comes from</h2>
-          <p class="sub">Every listing shows where the part comes from, how long it takes and how you pay.</p>
-        </div>
+      <h2>Delivery, payment and returns</h2>
+      <p class="sub">Every part in the list says where it comes from. That decides how fast it reaches you and how you pay.</p>
+      <div class="tbox">
+        <table class="terms">
+          <thead><tr><th scope="col">Where it comes from</th><th scope="col">Delivery</th><th scope="col">Payment</th><th scope="col">Returns</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">In stock in Dar<span>Fast-moving service parts on our shelf in Dar es Salaam.</span></th><td data-label="Delivery">Same day in Dar, 1–3 days upcountry</td><td data-label="Payment">In full, after we confirm</td><td data-label="Returns">Within 7 days if it doesn't fit</td></tr>
+            <tr><th scope="row">Kariakoo partner shop<span>Parts we don't keep, from established parts shops in Kariakoo. We check them and deliver.</span></th><td data-label="Delivery">1–2 days</td><td data-label="Payment">In full, after we confirm</td><td data-label="Returns">Within 7 days if it doesn't fit</td></tr>
+            <tr><th scope="row">From Japan<span>Genuine parts for the Toyotas, Nissans and Subarus on Tanzanian roads, matched to your chassis number.</span></th><td data-label="Delivery">10–14 days by air</td><td data-label="Payment">50% deposit, balance on arrival</td><td data-label="Returns">Only if we sent the wrong part</td></tr>
+            <tr><th scope="row">From Canada<span>New and used genuine parts for luxury cars, North American trucks and performance builds, from suppliers in Canada and the US.</span></th><td data-label="Delivery">12–16 days by air</td><td data-label="Payment">50% deposit, balance on arrival</td><td data-label="Returns">Only if we sent the wrong part</td></tr>
+            <tr><th scope="row">From China<span>Lights, body parts and accessories. We don't sell brake, steering or suspension parts from China.</span></th><td data-label="Delivery">14–21 days by air</td><td data-label="Payment">In full, after we confirm stock</td><td data-label="Returns">Only if we sent the wrong part</td></tr>
+          </tbody>
+        </table>
       </div>
-      <h3 class="ways-label">Here in Dar</h3>
-      <div class="ways ways-2">
-        <article class="way">
-          <span class="src" data-src="dar"><span class="dot"></span>In stock · Dar</span>
-          <p>Fast-moving service parts kept in Dar es Salaam.</p>
-          <dl><dt>Delivery</dt><dd>Today in Dar, 1–3 days upcountry</dd><dt>Payment</dt><dd>In full, after we confirm</dd><dt>Returns</dt><dd>Within 7 days if it doesn't fit</dd></dl>
-        </article>
-        <article class="way">
-          <span class="src" data-src="partner"><span class="dot"></span>Partner seller</span>
-          <p>Parts we don't stock, from big established parts shops in Kariakoo. We confirm fitment and deliver.</p>
-          <dl><dt>Delivery</dt><dd>1–2 days</dd><dt>Payment</dt><dd>In full, after we confirm</dd><dt>Returns</dt><dd>Within 7 days if it doesn't fit</dd></dl>
-        </article>
-      </div>
-      <h3 class="ways-label">Ordered for you</h3>
-      <p class="hint ways-note">Prices for imported parts include freight, duty, VAT and clearing. We confirm the supplier has the part before you pay.</p>
-      <div class="ways">
-        <article class="way">
-          <span class="src" data-src="japan"><span class="dot"></span>Ships from Japan</span>
-          <p>Genuine Japanese parts for the Toyotas, Nissans and Subarus on Tanzanian roads, matched to your chassis number.</p>
-          <dl><dt>Delivery</dt><dd>10–14 days by air</dd><dt>Payment</dt><dd>50% deposit, balance on arrival</dd><dt>Best for</dt><dd>Hilux, Prado, Land Cruiser 70, IST, Noah</dd></dl>
-        </article>
-        <article class="way">
-          <span class="src" data-src="canada"><span class="dot"></span>Ships from Canada</span>
-          <p>Genuine and used OEM parts for luxury cars, North American trucks and performance builds, bought from major suppliers in Canada and the US.</p>
-          <dl><dt>Delivery</dt><dd>12–16 days by air</dd><dt>Payment</dt><dd>50% deposit, balance on arrival</dd><dt>Best for</dt><dd>Mercedes, BMW, Range Rover, Freightliner</dd></dl>
-        </article>
-        <article class="way">
-          <span class="src" data-src="china"><span class="dot"></span>Ships from China</span>
-          <p>Lights, body parts and accessories from checked suppliers in China. We don't sell brake, steering or suspension parts from China.</p>
-          <dl><dt>Delivery</dt><dd>14–21 days by air</dd><dt>Payment</dt><dd>In full, after we confirm stock</dd><dt>Best for</dt><dd>Lights, trim and accessories</dd></dl>
-        </article>
-      </div>
+      <p class="note">Prices for imported parts already include freight, duty, VAT and clearing.</p>
       <div class="fitcheck">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5.5c0 4.2-2.9 7.8-7 9.5-4.1-1.7-7-5.3-7-9.5V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></svg>
-        <p>Send your chassis number, like <code>GRJ150-0123456</code>, or a 17-character VIN. We confirm the part fits before you pay. Parts from Dar stock and Kariakoo shops can be returned within 7 days if they don't fit. Imported parts are ordered for your vehicle, so they can be returned only if we sent the wrong part.</p>
+        <h3>We check the fit before you pay</h3>
+        <p>Send your chassis number, like <span class="oem">GRJ150-0123456</span>, or a 17-character VIN. It's on your registration card. Parts from Dar stock and Kariakoo shops can be returned within 7 days if they don't fit. Imported parts are ordered for your car, so we only take them back if we sent the wrong one.</p>
       </div>
     </div>
   </section>
@@ -183,19 +167,20 @@
   <section class="section" id="request">
     <div class="wrap req">
       <div>
-        <h2>Request any part</h2>
-        <p class="sub">Not listed? Tell us the vehicle and the part. We reply on WhatsApp with a price and delivery time, usually within a few hours (8:00–20:00, Mon–Sat).</p>
-        <ul class="tips">
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M7 10h6M7 14h10"/></svg></span><div><b>Chassis or VIN number</b><span>It's on your registration card. It tells us the exact engine and trim.</span></div></li>
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8h3l1.5-2.5h7L17 8h3v11H4z"/><circle cx="12" cy="13" r="3.3"/></svg></span><div><b>A photo of the old part</b><span>Include any numbers stamped or printed on it.</span></div></li>
-          <li><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></span><div><b>How fast you need it</b><span>We quote the fastest option and the lowest price when they differ.</span></div></li>
+        <h2>Can't find your part?</h2>
+        <p class="sub">Tell us the car and the part. We reply on WhatsApp with a price and delivery time, usually within a few hours (Mon–Sat, 8:00–20:00).</p>
+        <p class="sub">It helps if you send:</p>
+        <ul class="req-help">
+          <li>Your chassis or VIN number, from the registration card</li>
+          <li>A photo of the old part, showing any numbers stamped on it</li>
+          <li>Whether you need it fast or at the lowest price</li>
         </ul>
-        <div class="contact" style="margin-top:22px;font-size:15px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A7.5 7.5 0 1 1 8.4 18.6z"/></svg><span>Or message us directly:</span><a href="https://wa.me/17783250746" target="_blank" rel="noopener">WhatsApp +1 778 325 0746</a></div>
+        <p class="req-wa">Or message us directly: <a href="https://wa.me/17783250746" target="_blank" rel="noopener">WhatsApp +1 778 325 0746</a></p>
       </div>
 
       <div class="form-card" id="req-card">
         <form id="req-form" class="form-grid" novalidate>
-          <label class="f">Vehicle<input class="input" name="vehicle" id="r-vehicle" placeholder="e.g. Toyota Hilux 2018"></label>
+          <label class="f">Car or truck<input class="input" name="vehicle" id="r-vehicle" placeholder="e.g. Toyota Hilux 2018"></label>
           <label class="f">Chassis or VIN no. <span class="opt-tag">(optional)</span><input class="input" name="chassis" id="r-chassis" placeholder="e.g. GRJ150-0123456" autocomplete="off"></label>
           <label class="f full">Part you need<input class="input" name="part" id="r-part" placeholder="Name or part number, e.g. front wheel bearing" aria-describedby="r-part-err"><p class="err" id="r-part-err" hidden></p></label>
           <label class="f">Quantity<input class="input" name="qty" id="r-qty" type="number" min="1" value="1" inputmode="numeric"></label>
@@ -233,79 +218,70 @@
   </section>
 
   <section class="section" id="partners">
-    <div class="wrap split">
-      <article class="panel">
-        <p class="eyebrow">Garages and fleets</p>
-        <h3>Trade account</h3>
-        <ul class="ticks">
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Trade prices on every part</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>One WhatsApp contact for every order</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Filter packs for your fleet, ready by service date</li>
-          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Monthly statement after three months of trading</li>
-        </ul>
-        <p class="hint">Trade prices apply once we approve your account. Switch them on to preview what you'd pay.</p>
-        <div><button type="button" class="btn btn-primary" id="trade-cta">Show trade prices</button></div>
-      </article>
+    <div class="wrap">
+      <div class="split">
+        <article class="panel">
+          <h2>For garages and fleets</h2>
+          <p>If you buy parts every week, open a trade account.</p>
+          <ul class="plain">
+            <li>10% off every part</li>
+            <li>One WhatsApp contact for all your orders</li>
+            <li>Filter packs for your fleet, ready by service date</li>
+            <li>A monthly statement after three months of trading</li>
+          </ul>
+          <p class="hint">Trade prices apply once we approve your account. Turn them on to see what you'd pay.</p>
+          <div><button type="button" class="btn btn-primary" id="trade-cta">Show trade prices</button></div>
+        </article>
 
-      <article class="panel" id="sell">
-        <p class="eyebrow">Parts sellers in Dar</p>
-        <h3>Sell your parts here</h3>
-        <p>Established parts shops in Kariakoo can list their stock on Overdriveauto. We take the order, check fitment and arrange delivery. You pay a commission only when a part sells.</p>
-        <form id="seller-form" class="form-grid" novalidate>
-          <label class="f">Shop name<input class="input" name="shop" id="s-shop" aria-describedby="s-shop-err"><p class="err" id="s-shop-err" hidden></p></label>
-          <label class="f">Area<input class="input" name="area" id="s-area" placeholder="e.g. Kariakoo"></label>
-          <label class="f full">What do you sell?<input class="input" name="sells" id="s-sells" placeholder="e.g. Toyota suspension, used engines"></label>
-          <label class="f">WhatsApp number<input class="input" name="phone" id="s-phone" type="tel" placeholder="07XX XXX XXX" aria-describedby="s-phone-err"><p class="err" id="s-phone-err" hidden></p></label>
-          <div class="f" style="align-self:end"><button type="submit" class="btn btn-ghost btn-block">Send sign-up</button></div>
-        </form>
-        <div id="seller-sent" hidden></div>
-      </article>
+        <article class="panel" id="sell">
+          <h2>Sell your parts through us</h2>
+          <p>Established parts shops in Kariakoo can list their stock here. We take the order, check the fit and arrange delivery. You pay a commission only when a part sells.</p>
+          <form id="seller-form" class="form-grid" novalidate>
+            <label class="f">Shop name<input class="input" name="shop" id="s-shop" aria-describedby="s-shop-err"><p class="err" id="s-shop-err" hidden></p></label>
+            <label class="f">Area<input class="input" name="area" id="s-area" placeholder="e.g. Kariakoo"></label>
+            <label class="f full">What do you sell?<input class="input" name="sells" id="s-sells" placeholder="e.g. Toyota suspension, used engines"></label>
+            <label class="f">WhatsApp number<input class="input" name="phone" id="s-phone" type="tel" placeholder="07XX XXX XXX" aria-describedby="s-phone-err"><p class="err" id="s-phone-err" hidden></p></label>
+            <div class="f" style="align-self:end"><button type="submit" class="btn btn-ghost btn-block">Send sign-up</button></div>
+          </form>
+          <div id="seller-sent" hidden></div>
+        </article>
+      </div>
     </div>
   </section>
 </main>
 
 <footer id="contact">
-  <div class="wrap foot-grid">
-    <div class="foot-brand">
-      <a class="logo" href="#top" data-top aria-label="Overdriveauto, back to top">
-        <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 2.5l13.4 7.75v15.5L18 33.5 4.6 25.75v-15.5z" style="fill:var(--brand)"/><path d="M12 12.5l5.5 5.5-5.5 5.5M18.5 12.5l5.5 5.5-5.5 5.5" style="fill:none;stroke:var(--tag);stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round"/></svg>
-        <span class="logo-name"><b>Overdrive</b><span>auto</span></span>
-      </a>
-      <p>Car, truck and performance parts for Tanzania. Stock in Dar es Salaam, established Kariakoo shops, and parts ordered for you from Japan, Canada, the US and China.</p>
+  <div class="wrap foot">
+    <div class="foot-call">
+      <p class="foot-k">Orders and questions, WhatsApp or call</p>
+      <a class="foot-phone" href="tel:+17783250746">+1 778 325 0746</a>
+      <p>Mon–Sat, 8:00–20:00 East Africa Time</p>
+      <div class="foot-actions">
+        <a class="btn btn-marker" href="https://wa.me/17783250746" target="_blank" rel="noopener">Chat on WhatsApp</a>
+        <button type="button" class="copy-mini" data-copy-text="+1 778 325 0746">Copy number</button>
+      </div>
+      <p class="foot-mail"><a href="mailto:orgkiza@gmail.com">orgkiza@gmail.com</a><button type="button" class="copy-mini" data-copy-text="orgkiza@gmail.com">Copy</button></p>
     </div>
-    <div>
-      <h4>Shop</h4>
+    <nav aria-label="Footer">
+      <h4>On this site</h4>
       <ul class="foot-links">
         <li><a href="#parts">All parts</a></li>
-        <li><a href="#finder">Find parts by vehicle</a></li>
+        <li><a href="#finder">Find parts for your car</a></li>
         <li><a href="#request">Request a part</a></li>
-        <li><a href="#how">Delivery and payment</a></li>
-      </ul>
-    </div>
-    <div>
-      <h4>Business</h4>
-      <ul class="foot-links">
+        <li><a href="#how">Delivery and returns</a></li>
         <li><a href="#partners">Trade account</a></li>
         <li><a href="#sell">Sell your parts</a></li>
       </ul>
-    </div>
-    <div>
-      <h4>Contact</h4>
-      <div class="foot-contact">
-        <div class="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1 1A16 16 0 0 1 4 5a1 1 0 0 1 1-1"/></svg><a href="tel:+17783250746">+1 778 325 0746</a><button type="button" class="copy-mini" data-copy-text="+1 778 325 0746">Copy</button></div>
-        <div class="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 19.5l1.2-3.6A7.5 7.5 0 1 1 8.4 18.6z"/></svg><a href="https://wa.me/17783250746" target="_blank" rel="noopener">Chat on WhatsApp</a></div>
-        <div class="contact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/></svg><a href="mailto:orgkiza@gmail.com">orgkiza@gmail.com</a><button type="button" class="copy-mini" data-copy-text="orgkiza@gmail.com">Copy</button></div>
-        <p>Mon–Sat, 8:00–20:00 EAT</p>
-      </div>
-    </div>
-    <div>
-      <h4>Payment</h4>
+    </nav>
+    <div class="foot-pay">
+      <h4>Ways to pay</h4>
       <p>M-Pesa, Airtel Money and other mobile money, bank transfer, or cash on delivery for Dar stock.</p>
+      <p>Pickup point in Chang'ombe, Dar es Salaam. Delivery by boda in Dar and by bus parcel upcountry.</p>
     </div>
   </div>
   <div class="wrap foot-bottom">
-    <span>© <span id="year">2026</span> Overdriveauto. All rights reserved.</span>
-    <span>Prices in Tanzanian shillings (TZS).</span>
+    <span>© <span id="year">2026</span> Overdriveauto</span>
+    <span>Prices in Tanzanian shillings</span>
   </div>
 </footer>
 
@@ -315,7 +291,7 @@
   <div class="dr-head"><h2 id="cart-title">Your order</h2><button type="button" class="x" data-close aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
   <div class="dr-body">
     <div class="cart-empty" id="cart-empty" hidden>
-      <p>Your order is empty. Add parts from the catalogue, or request a part we don't list.</p>
+      <p>Your order is empty. Add parts from the list, or ask us for a part we don't list.</p>
       <div class="btn-row"><button type="button" class="btn btn-primary" data-close>Browse parts</button><button type="button" class="btn btn-ghost" data-request>Request a part</button></div>
     </div>
     <form id="order-form" novalidate style="display:grid;gap:22px">
@@ -327,7 +303,7 @@
           <label class="f">WhatsApp number<input class="input" id="o-phone" type="tel" placeholder="07XX XXX XXX" autocomplete="tel" aria-describedby="o-phone-err"><p class="err" id="o-phone-err" hidden></p></label>
         </div>
         <label class="f">Town or area<input class="input" id="o-area" placeholder="e.g. Mikocheni, Dar es Salaam"></label>
-        <label class="f">Chassis or VIN no. <span class="opt-tag">(optional, for the fitment check)</span><input class="input" id="o-chassis" placeholder="e.g. GRJ150-0123456" autocomplete="off"></label>
+        <label class="f">Chassis or VIN no. <span class="opt-tag">(optional, for the fit check)</span><input class="input" id="o-chassis" placeholder="e.g. GRJ150-0123456" autocomplete="off"></label>
       </fieldset>
       <fieldset id="f-pay"><legend>Payment</legend></fieldset>
     </form>
@@ -336,7 +312,7 @@
   <div class="dr-foot" id="cart-foot">
     <div class="sum" id="cart-sum"></div>
     <button type="submit" form="order-form" class="btn btn-wa btn-block">Send order on WhatsApp</button>
-    <p class="hint" style="text-align:center">We confirm stock and fitment before you pay anything.</p>
+    <p class="hint" style="text-align:center">We confirm stock and fit before you pay anything.</p>
   </div>
 </aside>
 
@@ -406,7 +382,7 @@ function fitsText(p) {
 function fitsShort(p) {
   if (p.universal) return p.fitNote;
   const a = p.fits.map(f => `${f.md} ${f.y[0]}–${f.y[1]}`);
-  return a.slice(0, 2).join(' · ') + (a.length > 2 ? ` · +${a.length - 2} more` : '') + (p.engine ? ` · ${p.engine}` : '');
+  return a.slice(0, 2).join(', ') + (a.length > 2 ? ` and ${a.length - 2} more` : '') + (p.engine ? `, ${p.engine}` : '');
 }
 const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
 const compact = s => norm(s).replace(/[^a-z0-9]/g, '');
@@ -427,65 +403,60 @@ function pass(p, except) {
 }
 
 /* ---------- Catalogue ---------- */
-const srcChip = s => `<span class="src" data-src="${s}"><span class="dot"></span>${esc(SRC[s].label)}</span>`;
+const srcChip = s => `<span class="avail" data-src="${s}">${esc(SRC[s].label)}</span>`;
+const lc = s => s ? s.charAt(0).toLowerCase() + s.slice(1) : '';
 
 function renderFilters() {
-  const lineBtns = [['all', 'All lines'], ...Object.entries(LINES)].map(([k, label]) => {
+  $('#lines').innerHTML = [['all', 'All'], ...Object.entries(LINES)].map(([k, label]) => {
     const n = PRODUCTS.filter(p => pass(p, 'line') && (k === 'all' || p.line === k)).length;
-    return `<button type="button" data-line="${k}" aria-pressed="${S.line === k}">${esc(label)}<span class="n">${n}</span></button>`;
+    return `<button type="button" class="fopt${n ? '' : ' is-empty'}" data-line="${k}" aria-pressed="${S.line === k}">${esc(label)}<span class="n">${n}</span></button>`;
   }).join('');
-  $('#lines').innerHTML = lineBtns;
 
-  const catBtns = [['all', 'All parts'], ...Object.entries(CATS)].map(([k, label]) => {
+  $('#cats').innerHTML = [['all', 'All parts'], ...Object.entries(CATS)].map(([k, label]) => {
     const n = PRODUCTS.filter(p => pass(p, 'cat') && (k === 'all' || p.cat === k)).length;
-    return `<button type="button" class="chip${n ? '' : ' empty-chip'}" data-cat="${k}" aria-pressed="${S.cat === k}">${esc(label)} <span class="n">${n}</span></button>`;
+    return `<button type="button" class="fopt${n ? '' : ' is-empty'}" data-cat="${k}" aria-pressed="${S.cat === k}">${esc(label)}<span class="n">${n}</span></button>`;
   }).join('');
-  $('#cats').innerHTML = catBtns;
 
   $('#srcs').innerHTML = Object.keys(SRC).map(k => {
     const n = PRODUCTS.filter(p => pass(p, 'src') && p.src === k).length;
-    return `<button type="button" class="chip" data-src="${k}" data-srcbtn="${k}" aria-pressed="${S.src.has(k)}"><span class="dot"></span>${esc(SRC[k].label)} <span class="n">${n}</span></button>`;
+    return `<button type="button" class="fopt src-opt" data-src="${k}" data-srcbtn="${k}" aria-pressed="${S.src.has(k)}"><span class="box" aria-hidden="true"></span>${esc(SRC[k].label)}<span class="n">${n}</span></button>`;
   }).join('');
 }
 
 function renderVehicleBar() {
   const el = $('#vbar');
   if (S.vehicle) {
-    el.innerHTML = `<span class="vchip">For: ${esc(vLabel(S.vehicle))}<button type="button" id="clear-veh" aria-label="Show parts for all vehicles">${I.close}</button></span>`;
+    el.innerHTML = `<span class="vchip">that fit your ${esc(vLabel(S.vehicle))}</span><button type="button" class="link-btn" id="clear-veh" aria-label="Show parts for all vehicles">Show all vehicles</button>`;
   } else {
-    el.innerHTML = `<span class="result-count">All vehicles</span><button type="button" class="link-btn" id="pick-veh">Pick your vehicle</button>`;
+    el.innerHTML = `<span class="vnote">for every vehicle</span><button type="button" class="link-btn" id="pick-veh">Pick your car</button>`;
   }
 }
 
 function card(p) {
   const n = S.cart[p.id] || 0;
   const sq = stockOf(p);
+  const src = SRC[p.src];
   let fits;
-  if (S.vehicle && p.universal === 'all') {
-    fits = `<p class="fits">${I.car}<span>${esc(p.fitNote)}</span></p>`;
-  } else if (S.vehicle) {
-    fits = `<p class="fits yes">${I.check}<span>Fits your ${esc(S.vehicle.model)} ${S.vehicle.year}${p.engine ? ' with ' + esc(p.engine) : ''}</span></p>`;
-  } else {
-    fits = `<p class="fits">${I.car}<span>${esc(fitsShort(p))}</span></p>`;
-  }
+  if (S.vehicle && p.universal === 'all') fits = `<p class="fits">${esc(p.fitNote)}</p>`;
+  else if (S.vehicle) fits = `<p class="fits yes">${I.check}<span>Fits your ${esc(S.vehicle.model)} ${S.vehicle.year}${p.engine ? ' with ' + esc(p.engine) : ''}</span></p>`;
+  else fits = `<p class="fits">${p.universal ? esc(p.fitNote) : 'Fits ' + esc(fitsShort(p))}</p>`;
+  const out = sq === 0;
+  const avail = out
+    ? `<span class="avail stock out">Out of stock in Dar</span><span class="eta">We can find you one</span>`
+    : `<span class="avail" data-src="${p.src}">${esc(src.label)}</span><span class="eta">${esc(src.eta)}${src.dep < 1 ? ', 50% deposit' : ''}</span>`;
+  const note = n ? `<span class="inorder">${n} in your order</span>` : (sq !== null && sq <= 3 && sq > 0 ? `<span class="stock low">Only ${sq} left</span>` : '');
   return `<article class="card">
-    <div class="card-top"><span class="ico">${ICONS[p.cat]}</span>${srcChip(p.src)}</div>
-    <div class="card-main">
+    <div class="c-name">
       <h3><button type="button" class="card-link" data-open="${p.id}">${esc(p.name)}</button></h3>
-      <p class="meta">${esc(p.brand)} · ${esc(p.cond)}</p>
+      <p class="meta">${esc(p.brand)} (${esc(lc(p.cond))})</p>
+      ${fits}
     </div>
-    <span class="oem">${esc(p.oem[0])}</span>
-    ${fits}
-    <div class="card-foot">
-      <div>
-        <div class="price">${fmt(price(p))}${S.trade ? `<s>${fmt(p.price)}</s>` : ''}</div>
-        <div class="terms">${esc(SRC[p.src].eta)}${SRC[p.src].dep < 1 ? ' · 50% deposit' : ''}</div>
-      </div>
-      <div class="add-wrap">
-        ${sq === 0 ? `<span class="stock out">Out of stock in Dar</span><button type="button" class="btn btn-ghost btn-sm" data-request data-request-part="${esc(p.name + ' (' + p.oem[0] + ')')}">Request it</button>` : `${n ? `<span class="inorder">${n} in order</span>` : (sq !== null && sq <= 3 ? `<span class="stock low">Only ${sq} left</span>` : '')}
-        <button type="button" class="btn btn-primary btn-sm" data-add="${p.id}" aria-label="Add ${esc(p.name)} to order">Add</button>`}
-      </div>
-    </div>
+    <div class="c-pn"><span class="oem">${esc(p.oem[0])}</span></div>
+    <p class="c-avail">${avail}</p>
+    <div class="c-price"><span class="price">${fmt(price(p))}</span>${S.trade ? `<s>${fmt(p.price)}</s>` : ''}</div>
+    <div class="c-buy">${out
+      ? `<button type="button" class="btn btn-ghost btn-sm" data-request data-request-part="${esc(p.name + ' (' + p.oem[0] + ')')}">Request it</button>`
+      : `${note}<button type="button" class="btn btn-primary btn-sm btn-add" data-add="${p.id}" aria-label="Add ${esc(p.name)} to your order">Add</button>`}</div>
   </article>`;
 }
 
@@ -544,7 +515,7 @@ $('#grid').addEventListener('click', e => {
 });
 $('#vbar').addEventListener('click', e => {
   if (e.target.closest('#clear-veh')) { setVehicle(null); toast('Showing parts for all vehicles'); }
-  if (e.target.closest('#pick-veh')) { scrollToEl($('#finder')); setTab('veh'); setTimeout(() => $('#v-make').focus({ preventScroll: true }), 350); }
+  if (e.target.closest('#pick-veh')) { scrollToEl($('#finder')); setTimeout(() => $('#v-make').focus({ preventScroll: true }), 350); }
 });
 $('#q').addEventListener('input', e => { S.q = e.target.value; renderAll(); });
 $('#q').addEventListener('keydown', e => { if (e.key === 'Enter') { e.preventDefault(); scrollToEl($('#parts')); } });
@@ -594,13 +565,20 @@ $('#panel-pn').addEventListener('submit', e => {
   toast(n ? `${n} ${n === 1 ? 'part matches' : 'parts match'} ${v}` : `No match for ${v}. You can request it.`);
 });
 $('#pn').addEventListener('input', () => { if ($('#pn').value.trim()) setErr($('#pn'), $('#pn-err'), ''); });
-function setTab(which) {
-  const veh = which === 'veh';
-  $('#tab-veh').setAttribute('aria-selected', veh); $('#tab-pn').setAttribute('aria-selected', !veh);
-  $('#panel-veh').hidden = !veh; $('#panel-pn').hidden = veh;
+/* The make, model and year pickers sit inside a sentence, so each one is sized to the option it shows. */
+function sizePick(sel) {
+  const m = sel.parentElement.querySelector('.pick-m'); if (!m) return;
+  const o = sel.options[sel.selectedIndex];
+  m.textContent = o ? o.text : '';
+  const w = m.getBoundingClientRect().width;
+  if (w) sel.style.width = Math.ceil(w + 38) + 'px';
 }
-$('#tab-veh').addEventListener('click', () => setTab('veh'));
-$('#tab-pn').addEventListener('click', () => { setTab('pn'); $('#pn').focus(); });
+const sizePicks = () => [mkSel, mdSel, yrSel].forEach(sizePick);
+[mkSel, mdSel, yrSel].forEach(sel => sel.addEventListener('change', sizePicks));
+sizePicks();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(sizePicks);
+let pickTimer;
+window.addEventListener('resize', () => { clearTimeout(pickTimer); pickTimer = setTimeout(sizePicks, 120); });
 
 /* ---------- Drawers ---------- */
 let lastFocus = null;
@@ -662,20 +640,18 @@ function openDetail(id) { S.detailId = id; S.detailQty = 1; renderDetail(); open
 function renderDetail() {
   const p = byId[S.detailId]; if (!p) return;
   const src = SRC[p.src];
-  $('#detail-eyebrow').textContent = `${LINES[p.line]} · ${CATS[p.cat]}`;
+  $('#detail-eyebrow').textContent = CATS[p.cat];
   const fitItems = p.universal
     ? `<li class="${S.vehicle && p.universal === 'truck' && isTruck(S.vehicle) ? 'match' : ''}">${I.check}<span>${esc(p.fitNote)}</span></li>`
     : p.fits.map(f => {
         const m = S.vehicle && f.mk === S.vehicle.make && f.md === S.vehicle.model && S.vehicle.year >= f.y[0] && S.vehicle.year <= f.y[1];
-        return `<li class="${m ? 'match' : ''}">${m ? I.check : I.car}<span>${esc(f.mk)} ${esc(f.md)}, ${f.y[0]}–${f.y[1]}${m ? ' (your vehicle)' : ''}</span></li>`;
+        return `<li class="${m ? 'match' : ''}">${m ? I.check : I.car}<span>${esc(f.mk)} ${esc(f.md)}, ${f.y[0]}–${f.y[1]}${m ? ' (your car)' : ''}</span></li>`;
       }).join('');
   $('#detail-body').innerHTML = `
-    <div class="d-top"><span class="ico ico-lg">${ICONS[p.cat]}</span>
-      <div><h2 class="d-title" id="detail-title">${esc(p.name)}</h2><p class="meta">${esc(p.brand)} · ${esc(p.cond)}</p></div>
-    </div>
-    <div class="d-price"><span class="price">${fmt(price(p))}</span>${S.trade ? `<s>${fmt(p.price)}</s><span class="src" data-src="dar">Trade price</span>` : ''}</div>
+    <div><h2 class="d-title" id="detail-title">${esc(p.name)}</h2><p class="meta">${esc(p.brand)} (${esc(lc(p.cond))})</p></div>
+    <div class="d-price"><span class="price">${fmt(price(p))}</span>${S.trade ? `<s>${fmt(p.price)}</s><span class="d-trade">Trade price</span>` : ''}</div>
     <section class="d-sec"><h4>Part numbers</h4>
-      <ul class="pn-list">${p.oem.map(o => `<li><code>${esc(o)}</code><button type="button" class="link-btn" data-copy="${esc(o)}">Copy</button></li>`).join('')}</ul>
+      <ul class="pn-list">${p.oem.map(o => `<li><span class="oem">${esc(o)}</span><button type="button" class="link-btn" data-copy="${esc(o)}">Copy</button></li>`).join('')}</ul>
     </section>
     <section class="d-sec"><h4>Fits</h4><ul class="fit-list">${fitItems}</ul>${p.engine ? `<p class="hint" style="margin-top:6px">Only with ${esc(p.engine)}.</p>` : ''}</section>
     <section class="d-src" data-src="${p.src}">
@@ -691,7 +667,7 @@ function renderDetail() {
     <button type="button" class="btn btn-primary btn-block" data-request data-request-part="${esc(p.name + ' (' + p.oem[0] + ')')}">Request it and we'll find one</button>` : `
     <div class="d-actions">
       <div class="qty" aria-label="Quantity"><button type="button" data-dq="-1" aria-label="One less">−</button><span>${S.detailQty}</span><button type="button" data-dq="1" aria-label="One more">+</button></div>
-      <button type="button" class="btn btn-primary" id="d-add">Add to order · ${fmt(total)}</button>
+      <button type="button" class="btn btn-primary" id="d-add">Add to order (${fmt(total)})</button>
     </div>
     <button type="button" class="btn btn-ghost btn-block" data-request data-request-part="${esc(p.name + ' (' + p.oem[0] + ')')}">Not sure it fits? Ask us</button>`;
 }
@@ -748,9 +724,9 @@ function renderCart() {
 
   const groups = ALL_SRC.map(s => {
     const its = t.items.filter(i => i.p.src === s); if (!its.length) return '';
-    return `<div class="group"><h4>${srcChip(s)}<span>${esc(SRC[s].eta)}</span></h4>${its.map(({ p, q }) => `
+    return `<div class="group"><h4>${esc(SRC[s].label)}<span>${esc(lc(SRC[s].eta))}</span></h4>${its.map(({ p, q }) => `
       <div class="line">
-        <div><div class="line-name">${esc(p.name)}</div><div class="line-sub">${esc(p.brand)} · ${esc(p.oem[0])} · ${fmt(price(p))} each</div></div>
+        <div><div class="line-name">${esc(p.name)}</div><div class="line-sub">${esc(p.brand)}, ${esc(p.oem[0])}, ${fmt(price(p))} each</div></div>
         <div class="line-total">${fmt(price(p) * q)}</div>
         <div class="line-ctl">
           <div class="qty"><button type="button" data-cq="${p.id}" data-d="-1" aria-label="One less ${esc(p.name)}">−</button><span>${q}</span><button type="button" data-cq="${p.id}" data-d="1" aria-label="One more ${esc(p.name)}">+</button></div>
